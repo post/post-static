@@ -2,37 +2,37 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+> ✏️ Briefly describe the issue you are experiencing (or the feature you want to see added to the plugin). Tell us what you were trying to do and what happened instead.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### `Details`
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+> ✏️ Describe in more detail the problem you have been experiencing, if necessary.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## `Error (Logs|Stacks)`
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+> 👉 Create a [gist](https://gist.github.com) which is a paste of your **full** logs, and link them here.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+> ⚠️ Do **not** paste your full logs here (or at least hide them by using a `<details></details>` block), as it will make this issue long and hard to read! If you are reporting a bug, **always** include logs!
 
-**Additional context**
-Add any other context about the problem here.
+### `Reproduction (Code)`
+
+> ⚠️ Please remember that, with sample code; it's easier to reproduce a bug and much faster to fix it.
+
+> 🔗 Please refer to a simple code example.
+
+```bash
+$ git clone https://github.com/<user>/<sample>
+```
+
+### `Environment`
+
+> ℹ️ Please provide information about your current environment.
+
+|OS|node|npm/yarn|package|
+|:-:|:--:|:-:|:------:|
+|[name][version]|[version]|[version]|[version]|

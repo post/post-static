@@ -3,10 +3,12 @@
 ```tree
 src
 ├── assets
-│   ├── css
+│   ├── styles
 │   ├── fonts
-│   ├── img
-│   └── js
+│   ├── images
+│   ├── videos
+│   ├── audios
+│   └── javascripts
 └── templates
     ├── base
     │   └── base.html

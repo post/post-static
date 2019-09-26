@@ -11,14 +11,8 @@ insert_final_newline = true
 [{package.json,*.yml,*.jade,*.pss,*.css}]
 indent_size = 2
 
-[changelog.md]
+[{changelog.md,*.html}]
 insert_final_newline = false
-
-[*.html]
-insert_final_newline = false
-
-[{*.js,*.jsx}]
-indent_style = tab
 
 [*.md]
 trim_trailing_whitespace = false

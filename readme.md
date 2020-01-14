@@ -3,6 +3,7 @@
 ```tree
 src
 ├── assets
+│   ├── configs
 │   ├── styles
 │   ├── fonts
 │   ├── images

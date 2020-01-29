@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm run clean && npm run html",
     "clean": "rimraf dist",
-    "html": "posthtml -c ./configs/posthtml.config.js"
+    "html": "posthtml -c ./configs/posthtml.config.js",
+    "test": ""
   },
   "keywords": [],
   "author": "",

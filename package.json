@@ -1,12 +1,13 @@
 {
   "name": "cupis-static",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run html",
     "clean": "rimraf dist",
-    "html": "posthtml -c ./configs/posthtml.config.js"
+    "html": "posthtml -c ./configs/posthtml.config.js",
+    "test": ""
   },
   "keywords": [],
   "author": "",

@@ -1,20 +1,39 @@
-name: GitHub Actions
-
+name: Actions Status
 on:
   pull_request:
+    types: [opened, synchronize]
     branches:
       - master
+env:
+  CI: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  run:
+    name: Node ${{ matrix.node }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [10, 12, 14]
+        os: [ubuntu-latest]
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 13.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: '13.x'
-    - name: npm install, and run test
-      run: |
-        npm i
-        npm t
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Set Node.js version
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Run Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
